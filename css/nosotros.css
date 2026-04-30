@@ -1,0 +1,107 @@
+.parrafo {
+  font-size: 16px;
+  color: var(--color-secundary);
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.nosotros-imagen {
+  width: 100%;
+  height: 300px;
+}
+
+.nosotros-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.personas {
+  gap: 2rem;
+}
+
+.personas-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.persona {
+  width: 270px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  margin-bottom: 20px;
+  box-shadow: 0 0 rgba(46, 252, 231, 0.5);
+  border-radius: 20px;
+  color: var(--color-primary);
+}
+
+.persona-imagen {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.persona-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.persona-contenido {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.persona-nombre {
+  font-size: 3rem;
+}
+
+.persona-rol {
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+.valores-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.valor {
+  background-color: var(--bg-primary);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.valor-icono {
+  width: 50px;
+  height: 50px;
+}
+
+.valor-icono img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.valor-titulo {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
