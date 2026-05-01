@@ -6,60 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh Market - Inicio</title>
     <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <section class="section hero">
+    <nav class="nav">
+        <a href="./index.html" class="nav-logo">Fresh Market</a>
+
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="/paginas/nosotros.html" class="nav-link">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a href="/paginas/productos.html" class="nav-link">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a href="/paginas/ofertas.html" class="nav-link">Ofertas</a>
+            </li>
+            <ul class="nav-group">
+                <li class="nav-item">
+                    <a href="/paginas/login.html" id="botonInicio" class="nav-link">Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/paginas/registro.html" id="botonRegistro" class="nav-link">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <span id="botonCerrarSesion" class="nav-link">Cerrar sesion</a>
+                </li>
+            </ul>
+            <a href="/paginas/panel.html" class="perfil">
+                <img src="/imagenes/perfil.jpg" alt="" class="perfil-imagen">
+            </a>
+        </ul>
+
+    </nav>
+
+    <header class="section hero">
         <img src="./imagenes/banner.jpeg" class="banner" alt="">
         <div class="hero-content">
             <span class="hero-title">Aquí lo natural sí es de verdad.</span>
             <a href="" class="hero-button">Conoce la calidad ya</a>
         </div>
-    </section>
+    </header>
 
-    <div class="contenedor">
+    <main class="contenedor">
         <section class="section categorias">
             <h2 class="titulo">Categorias Destacadas</h2>
             <div class="categorias-contenedor">
-                <a href="" class="categoria">
+                <div class="categoria">
                     <figure class="categoria-imagen">
-                        <img src="../imagenes/p1.jpg" alt="">
+                        <img src="../imagenes/c1.jpg" alt="">
                     </figure>
                     <div class="categoria-contenido">
                         <span class="categoria-nombre">Frutas</span>
                     </div>
+                </div>
+
+                <div class="categoria">
+                    <figure class="categoria-imagen">
+                        <img src="../imagenes/c2.jpg" alt="">
+                    </figure>
+                    <div class="categoria-contenido">
+                        <span class="categoria-nombre">Verduras</span>
+                    </div>
+                </div>
+
+                <div class="categoria">
+                    <figure class="categoria-imagen">
+                        <img src="../imagenes/c3.jpg" alt="">
+                    </figure>
+                    <div class="categoria-contenido">
+                        <span class="categoria-nombre">Lacteos</span>
+                    </div>
+                </div>
+
+                <div class="categoria">
+                    <figure class="categoria-imagen">
+                        <img src="../imagenes/c4.jpg" alt="">
+                    </figure>
+                    <div class="categoria-contenido">
+                        <span class="categoria-nombre">Panaderia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div href="" class="categoria categoria-flotante hidden">
+            <figure class="categoria-imagen">
+                <img src="../imagenes/c4.jpg" alt="">
+            </figure>
+            <div class="categoria-contenido">
+                <span class="categoria-nombre">Panaderia</span>
+                <span>Agotado</span>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+
+            <!-- Info -->
+            <div class="footer__section">
+                <h3 class="footer__title">FreshMarket</h3>
+                <p class="footer__text">Dirección: Calle 123, Ciudad</p>
+                <p class="footer__text">Horario: 8:00 AM - 8:00 PM</p>
             </div>
 
-            <a href="" class="categoria">
-                <figure class="categoria-imagen">
-                    <img src="../imagenes/p2.jpg" alt="">
-                </figure>
-                <div class="categoria-contenido">
-                    <span class="categoria-nombre">Verduras</span>
-                </div>
-            </a>
+            <!-- Redes -->
+            <div class="footer__section">
+                <h3 class="footer__title">Síguenos</h3>
+                <a href="#" class="footer__link">Facebook</a>
+                <a href="#" class="footer__link">Instagram</a>
+                <a href="#" class="footer__link">Twitter</a>
+            </div>
 
-            <a href="" class="categoria">
-                <figure class="categoria-imagen">
-                    <img src="../imagenes/p3.jpg" alt="">
-                </figure>
-                <div class="categoria-contenido">
-                    <span class="categoria-nombre">Lacteos</span>
-                </div>
-            </a>
+            <!-- Mapa -->
+            <div class="footer__section">
+                <h3 class="footer__title">Ubicación</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127450.08091013388!2d-76.68156456954055!3d3.3952810604978363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f0cc4bb3f1%3A0x1f0fb5e952ae6168!2sCali%2C%20Valle%20del%20Cauca%2C%20Colombia!5e0!3m2!1ses-419!2sus!4v1777667071244!5m2!1ses-419!2sus"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-            <a href="" class="categoria">
-                <figure class="categoria-imagen">
-                    <img src="../imagenes/p3.jpg" alt="">
-                </figure>
-                <div class="categoria-contenido">
-                    <span class="categoria-nombre">Panaderia</span>
-                </div>
-            </a>
-    </div>
-    </section>
-    </div>
+            <p class="footer__copy">© 2026 FreshMarket</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

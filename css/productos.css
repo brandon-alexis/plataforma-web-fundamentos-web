@@ -4,11 +4,11 @@
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .tarjeta {
-  width: 200px;
+  width: 300px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,31 @@
   box-shadow: 0 0 rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   color: var(--color-primary);
+  transition: 0.3s ease-in;
+  animation: show 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.tarjeta:hover {
+  transform: translateY(-20px);
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .tarjeta-imagen {
-  width: 200px;
-  height: 100px;
+  width: inherit;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
 }
 
 .tarjeta-imagen img {
@@ -40,5 +60,47 @@
   font-size: 30px;
 }
 
+.tarjeta-categoria {
+  padding: 5px;
+  background-color: var(--color-primary);
+  width: fit-content;
+  border-radius: 20px;
+  color: var(--bg-primary);
+  margin-top: 10px;
+}
+
 .botones {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border: 1px solid var(--bg-primary);
+  padding: 1rem;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.botones-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.boton {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: var(--bg-primary);
+  color: var(--color-primary);
+  transition: 0.2s ease-in;
+}
+
+.boton:hover {
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+  transform: scale(1.1);
 }

@@ -57,6 +57,8 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .persona-nombre {
@@ -67,8 +69,8 @@
   background-color: var(--bg-secondary);
   border-radius: 10px;
   width: fit-content;
-  padding: 8px;
-  font-size: 0.9rem;
+  padding: 8px 12px;
+  font-size: 0.7rem;
 }
 
 .valores-contenedor {

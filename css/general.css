@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --bg-primary: #1abc9c;
   --bg-secondary: #16a085;
@@ -19,6 +21,8 @@
 body {
   width: 100%;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 .contenedor {
@@ -26,10 +30,17 @@ body {
   min-height: 100vh;
   padding: 1rem 3rem;
   overflow: hidden;
+  margin-top: 5rem;
 }
 
 .titulo {
   font-size: 3rem;
+  color: var(--bg-primary);
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  font-size: 2rem;
   color: var(--bg-primary);
   margin-bottom: 1rem;
 }
@@ -42,4 +53,5 @@ body {
 
 a {
   text-decoration: none;
+  color: var;
 }

@@ -1,0 +1,144 @@
+/* Layout principal */
+.user-panel {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  margin-top: 10rem;
+}
+
+/* Card */
+.user-panel__card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Títulos */
+.user-panel__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.user-panel__subtitle {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+/* Info usuario */
+.user-panel__info {
+  display: grid;
+  gap: 1rem;
+}
+
+.user-panel__item {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.user-panel__label {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.user-panel__value {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-panel__value--role {
+  color: #2563eb;
+  text-transform: capitalize;
+}
+
+/* Secciones */
+.user-panel__section {
+  margin-top: 1rem;
+}
+
+.user-panel__section.hidden {
+  display: none;
+}
+
+/* Grid responsive */
+.user-panel__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+/* Cards (compras / cupones) */
+.user-panel__purchase,
+.user-panel__coupon {
+  background: #f9fafb;
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+}
+
+/* Imágenes */
+.user-panel__purchase img,
+.user-panel__coupon img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+/* Textos compras / cupones */
+.user-panel__purchase-title,
+.user-panel__coupon-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.user-panel__purchase-date,
+.user-panel__coupon-code {
+  font-size: 0.8rem;
+  color: #666;
+  padding: 0 0.5rem 0.5rem;
+}
+
+/* Usuarios registrados */
+.user-panel__users {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.user-panel__user {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 0.8rem;
+  align-items: center;
+  background: #f9fafb;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.user-panel__user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-panel__user-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.user-panel__user-role {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: capitalize;
+}

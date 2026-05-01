@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/panel.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/layout.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="./index.html" class="nav-logo">Fresh Market</a>
+
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="/paginas/nosotros.html" class="nav-link">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a href="/paginas/productos.html" class="nav-link">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a href="/paginas/ofertas.html" class="nav-link">Ofertas</a>
+            </li>
+            <ul class="nav-group">
+                <li class="nav-item">
+                    <a href="/paginas/login.html" id="botonInicio" class="nav-link">Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/paginas/registro.html" id="botonRegistro" class="nav-link">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <span id="botonCerrarSesion" class="nav-link">Cerrar sesion</a>
+                </li>
+            </ul>
+            <a href="/paginas/panel.html" class="perfil">
+                <img src="/imagenes/perfil.jpg" alt="" class="perfil-imagen">
+            </a>
+        </ul>
+
+    </nav>
+    <div class="user-panel">
+        <div class="user-panel__card">
+            <h2 class="user-panel__title">Perfil de Usuario</h2>
+
+            <!-- Info -->
+            <div class="user-panel__info">
+                <div class="user-panel__item">
+                    <span class="user-panel__label">Nombre</span>
+                    <span class="user-panel__value" id="nombre">pepe</span>
+                </div>
+
+                <div class="user-panel__item">
+                    <span class="user-panel__label">Correo</span>
+                    <span class="user-panel__value" id="correo">pepe@gmail.com</span>
+                </div>
+
+                <div class="user-panel__item">
+                    <span class="user-panel__label">Rol</span>
+                    <span class="user-panel__value user-panel__value--role" id="rol">cliente</span>
+                </div>
+
+                <div class="user-panel__item">
+                    <span class="user-panel__label">Último acceso</span>
+                    <span class="user-panel__value" id="fecha">2026-05-01 22:23</span>
+                </div>
+            </div>
+
+            <!-- Historial -->
+            <div class="user-panel__section">
+                <h3 class="user-panel__subtitle">Historial de Compras</h3>
+
+                <div class="user-panel__grid">
+                    <div class="user-panel__purchase">
+                        <img src="https://i.pinimg.com/736x/20/f4/4a/20f44a71554a4f543f8efbe3ec2a3631.jpg" alt="Tomates"
+                            loading="lazy">
+                        <p class="user-panel__purchase-title">Tomates</p>
+                        <span class="user-panel__purchase-date">Abril 2026</span>
+                    </div>
+
+                    <div class="user-panel__purchase">
+                        <img src="https://i.pinimg.com/736x/68/46/70/684670e508cb9ac6c402edacb9f2fb48.jpg" alt="Manzana"
+                            loading="lazy">
+                        <p class="user-panel__purchase-title">Manzana</p>
+                        <span class="user-panel__purchase-date">Marzo 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cupones -->
+            <div class="user-panel__section">
+                <h3 class="user-panel__subtitle">Cupones</h3>
+
+                <div class="user-panel__grid">
+                    <div class="user-panel__coupon">
+                        <img src="https://i.pinimg.com/1200x/35/bb/4a/35bb4ab24ababb353bd90f39e454f569.jpg"
+                            alt="Descuento" loading="lazy">
+                        <p class="user-panel__coupon-title">10% OFF</p>
+                        <span class="user-panel__coupon-code">CODIGO10</span>
+                    </div>
+
+                    <div class="user-panel__coupon">
+                        <img src="https://i.pinimg.com/736x/80/94/69/80946982747174db15ff7122a46644be.jpg"
+                            alt="Shopping" loading="lazy">
+                        <p class="user-panel__coupon-title">Envío gratis</p>
+                        <span class="user-panel__coupon-code">FREEDEL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usuarios registrados -->
+            <div class="user-panel__section user-panel__section--usuarios">
+                <h3 class="user-panel__subtitle">Usuarios Registrados</h3>
+
+                <div class="user-panel__users">
+                    <div class="user-panel__user">
+                        <img src="https://picsum.photos/id/1005/100/100" alt="usuario">
+                        <div>
+                            <p class="user-panel__user-name">Ana Gómez</p>
+                            <span class="user-panel__user-role">admin</span>
+                        </div>
+                    </div>
+
+                    <div class="user-panel__user">
+                        <img src="https://picsum.photos/id/1011/100/100" alt="usuario">
+                        <div>
+                            <p class="user-panel__user-name">Carlos Ruiz</p>
+                            <span class="user-panel__user-role">cliente</span>
+                        </div>
+                    </div>
+
+                    <div class="user-panel__user">
+                        <img src="https://picsum.photos/id/1027/100/100" alt="usuario">
+                        <div>
+                            <p class="user-panel__user-name">Laura Díaz</p>
+                            <span class="user-panel__user-role">cliente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/panel.js"></script>
+</body>
+
+</html>
